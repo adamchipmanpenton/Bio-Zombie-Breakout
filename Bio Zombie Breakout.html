@@ -8,19 +8,52 @@
 </head>
 <body>
     <main>
-        <h1>Bio Zombie Breakout!!!!</h1>   
+        <div><h1>Bio Zombie Breakout!!!!</h1>   
+
 
         <div>
-            <label>&nbsp;</label>
-            <input type="button" id="start_game" value="Start Game">
-            <input type="button" id="next_question" value="Next Question">          
+            <p id = "showQuestion"></p>
+           
+                   
+        </div>
+            <div>
+        
+
+        <div class="anwserBox">
+            <div>
+                <input type="button" class="questonButton" id="answer1" value="">
+                <input type="button" class="questonButton" id="answer2" value="">           
+            </div>
+
+            <div>
+                <input type="button" class="questonButton" id="answer3" value=""> 
+                <input type="button" class="questonButton" id="answer4" value="">    
+            </div>
         </div>
 
+        <div>
+            <p id = "showAnswer"></p>
+           
+                   
+        </div>
+        
+        
         <div>
             <textarea id="text_area"></textarea> 
                    
         </div>
+
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" class="button" id="start_game" value="Start Game">
+            <input type="button" class="button" id="next_question" value="Next Question">
+            <input type="button" class="button" id="playAgain" value="Play Again?">          
+        </div>
+
+        
     </main>
     <script src="Bio Zombie Breakout.js"></script>
 </body>
+
+
 </html>

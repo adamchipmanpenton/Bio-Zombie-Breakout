@@ -9,56 +9,39 @@
 <body>
     <main>
         <h1>Bio Zombie Breakout!!!!</h1> 
-
         <div class="timer">
             <p>Time left: </p>
             <p id="minutes"></p>
             <p>:</p>
             <p id="seconds"></p>
-            <p>:</p>
-            <p id="milliseconds"></p>
         </div>
         <div class="heading">
-              
             <h2 id = "doorNumberDisplay"></h2>
-            <p id = "showQuestion"></p>
+            <p id = "showQuestion" class="showQuestion"></p>
+            <p id = "showAnswer" class="showAnswer"></p> 
         </div>    
-        
-
         <div class="answerBox">
             <div>
-                <input type="button" class="questonButton" id="answer1" value="">
-                <input type="button" class="questonButton" id="answer2" value="">           
+                <input type="button" class="questionButton" id="answer1" value="">
+                <input type="button" class="questionButton" id="answer2" value="">           
             </div>
-
             <div>
-                <input type="button" class="questonButton" id="answer3" value=""> 
-                <input type="button" class="questonButton" id="answer4" value="">    
+                <input type="button" class="questionButton" id="answer3" value=""> 
+                <input type="button" class="questionButton" id="answer4" value="">    
             </div>
         </div>
-
-        <div class = "footer">
-            <p id = "showAnswer"></p>   
+        <div class = "footer"> 
             <textarea id="textArea"></textarea>     
-            <label>&nbsp;</label>
-            <input type="button" class="button" id="start_game" value="Start Game" src = "images/bio.jpg">
-            <input type="button" class="button" id="next_question" value="Next Question">
+            <input type="button" class="button" id="start_game" value="Start Game" onclick="playAudio()">
             <input type="button" class="button" id="playAgain" value="Play Again?">  
+            <input type="button" class="button" id="next_question" value="Next Question">
             <p><img src="" id="health"></p>     
-
         </div>
-
-        
-
         <audio id="zombieSounds" autoplay loop>
             <source src="sounds/Large-Zombie-Horde.mp3">
             <source src="sounds/Passive-Moans.mp3">
         </audio>
-
-        
     </main>
     <script src="Bio Zombie Breakout.js"></script>
 </body>
-
-
 </html>

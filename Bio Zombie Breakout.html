@@ -8,15 +8,24 @@
 </head>
 <body>
     <main>
+        <h1>Bio Zombie Breakout!!!!</h1> 
 
+        <div class="timer">
+            <p>Time left: </p>
+            <p id="minutes"></p>
+            <p>:</p>
+            <p id="seconds"></p>
+            <p>:</p>
+            <p id="milliseconds"></p>
+        </div>
         <div class="heading">
-            <h1>Bio Zombie Breakout!!!!</h1>   
+              
             <h2 id = "doorNumberDisplay"></h2>
             <p id = "showQuestion"></p>
         </div>    
         
 
-        <div class="anwserBox">
+        <div class="answerBox">
             <div>
                 <input type="button" class="questonButton" id="answer1" value="">
                 <input type="button" class="questonButton" id="answer2" value="">           
@@ -30,7 +39,7 @@
 
         <div class = "footer">
             <p id = "showAnswer"></p>   
-            <textarea id="text_area"></textarea>     
+            <textarea id="textArea"></textarea>     
             <label>&nbsp;</label>
             <input type="button" class="button" id="start_game" value="Start Game" src = "images/bio.jpg">
             <input type="button" class="button" id="next_question" value="Next Question">
@@ -39,12 +48,12 @@
 
         </div>
 
-        <div class="timer">
-            <p>Time left: </p>
-            <p id="minutes"></p>:
-            <p id="seconds"></p>:
+        
 
-        </div>
+        <audio id="zombieSounds" autoplay loop>
+            <source src="sounds/Large-Zombie-Horde.mp3">
+            <source src="sounds/Passive-Moans.mp3">
+        </audio>
 
         
     </main>

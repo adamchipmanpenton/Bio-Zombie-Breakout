@@ -1,7 +1,28 @@
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.heading{
+    order: 3;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 3;
+    text-align: center;
+}
+
 .anwserBox{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 50px;
+    justify-content: space-between 100px;
 }
 .anwserBox{
     order: 2;
@@ -43,17 +64,13 @@ input, textarea {
 textarea {
     opacity: 0.6;
 	width: 500px;
-	height: 120px;
+	height: 150px;
 	font-size: 120%;
     vertical-align: middle;
     margin: auto;
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
-    grid-column: 2/3/4;
-    grid-row: 5/6/7;
-   
-
 }
 span {
     color: red;
@@ -66,9 +83,17 @@ span {
     width: 400px;
     height: 75px;
     align-self: auto;
-    
-
 }
+.timer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}
+
 .button{
     font-size: small;
     color:black;

@@ -8,16 +8,12 @@
 </head>
 <body>
     <main>
-        <div><h1>Bio Zombie Breakout!!!!</h1>   
 
-
-        <div>
+        <div class="heading">
+            <h1>Bio Zombie Breakout!!!!</h1>   
             <h2 id = "doorNumberDisplay"></h2>
             <p id = "showQuestion"></p>
-           
-                   
-        </div>
-            <div>
+        </div>    
         
 
         <div class="anwserBox">
@@ -32,23 +28,22 @@
             </div>
         </div>
 
-        <div>
-            <p id = "showAnswer"></p>
-           
-                   
-        </div>
-        
-        
-        <div>
-            <textarea id="text_area"></textarea> 
-                   
+        <div class = "footer">
+            <p id = "showAnswer"></p>   
+            <textarea id="text_area"></textarea>     
+            <label>&nbsp;</label>
+            <input type="button" class="button" id="start_game" value="Start Game" src = "images/bio.jpg">
+            <input type="button" class="button" id="next_question" value="Next Question">
+            <input type="button" class="button" id="playAgain" value="Play Again?">  
+            <p><img src="" id="health"></p>     
+
         </div>
 
-        <div>
-            <label>&nbsp;</label>
-            <input type="button" class="button" id="start_game" value="Start Game">
-            <input type="button" class="button" id="next_question" value="Next Question">
-            <input type="button" class="button" id="playAgain" value="Play Again?">          
+        <div class="timer">
+            <p>Time left: </p>
+            <p id="minutes"></p>:
+            <p id="seconds"></p>:
+
         </div>
 
         
